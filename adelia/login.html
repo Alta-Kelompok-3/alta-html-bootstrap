@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style/login.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/78c61969f7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./../asset/logo.png" width="233" height="66" />
+
+      <div class="card-login">
+        <div class="label-login">Login</div>
+
+        <div class="content-login">
+          <div class="text-login">Masuk ke akun anda.</div>
+
+          <input class="form-control" type="email" placeholder="Enter Email" />
+          <br />
+
+          <div class="input-group mb-3">
+            <input
+              class="form-control form-password"
+              type="password"
+              placeholder="Password"
+            />
+            <span class="input-group-text">
+              <i
+                class="fa fa-eye"
+                id="togglePassword"
+                style="cursor: pointer"
+              ></i>
+            </span>
+          </div>
+
+          <div class="text-forgot-password">Lupa kata sandi?</div>
+        </div>
+
+        <div class="button-login">Masuk</div>
+      </div>
+    </div>
+  </body>
 </html>
