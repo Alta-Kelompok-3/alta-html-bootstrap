@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.row > * {
+  width: 194px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 20px 0;
+    background-color: #ffffff !important;
+    box-shadow: 0px 5px 8px -7px rgba(211, 211, 211, 0.75);
+  }
+
+  .navbar .image-logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbar .nav-item .imageSmall {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .navbar .navbar-collapse {
+    margin-top: 25px;
+  }
+
+  .navbar .image-container .images {
+    display: none;
+  }
+
+  .navbar .cartImage {
+    position: relative !important;
+  }
+
+  .navbar .badge {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: inline !important;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    z-index: 10000;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .navbar .image-container .nav-item {
+    list-style: none;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+  }
+
+  .navbar .image-container .nav-item .nav-link {
+    padding: 8px 0;
+    color: #000;
+  }
+
+  .navbar .image-container .nav-item img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .navbar .form-control {
+    position: relative;
+    margin-top: 15px;
+    border-radius: 50px;
+  }
+
+  .navbar .search-icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../../asset/search.png"); /* Ganti dengan URL gambar ikon search yang sesuai */
+    background-size: cover;
+  }
+
+  /* Gaya untuk input search */
+  .navbar .search-input {
+    padding-left: 30px; /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
+  }
+}
+
+@media (max-width: 991px) and (min-width: 577px) {
+  .navbar {
+    padding: 20px 0;
+    background-color: #ffffff !important;
+    box-shadow: 0px 5px 8px -7px rgba(211, 211, 211, 0.75);
+  }
+
+  .navbar .image-logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .navbar .nav-link {
+    font-size: 22px;
+    padding: 8px 10px;
+  }
+
+  .navbar .nav-item .imageSmall {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .navbar .navbar-collapse {
+    margin-top: 25px;
+  }
+
+  .navbar .image-container .images {
+    display: none;
+  }
+
+  .navbar .cartImage {
+    position: relative !important;
+  }
+
+  .navbar .badge {
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    display: inline !important;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    z-index: 10000;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .navbar .image-container .nav-item {
+    list-style: none;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+  }
+
+  .navbar .image-container .nav-item .nav-link {
+    padding: 8px 10px;
+    color: #000;
+  }
+
+  .navbar .image-container .nav-item img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .navbar .form-control {
+    position: relative;
+    padding: 15px 15px;
+    margin-top: 15px;
+    border-radius: 50px;
+  }
+
+  .navbar .search-icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../../asset/search.png"); /* Ganti dengan URL gambar ikon search yang sesuai */
+    background-size: cover;
+  }
+
+  /* Gaya untuk input search */
+  .navbar .search-input {
+    padding-left: 30px; /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 20px 0;
+    background-color: #ffffff !important;
+    box-shadow: 0px 5px 8px -7px rgba(211, 211, 211, 0.75);
+  }
+
+  .navbar .image-logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .navbar .nav-link {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+  .navbar .navbar-nav {
+    flex: content;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .navbar .nav-item {
+    margin-right: 20px;
+  }
+
+  .navbar .nav-item .imageSmall {
+    display: none;
+  }
+
+  .navbar .cartImage {
+    position: relative !important;
+  }
+
+  .navbar .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline !important;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    z-index: 10000;
+    font-weight: 500;
+  }
+
+  .navbar .images {
+    width: auto;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  .navbar .image-container .linkSmall {
+    display: none;
+  }
+
+  .navbar .image-container {
+    display: inline-flex;
+  }
+
+  .navbar .form-control {
+    position: relative;
+    border-radius: 50px;
+  }
+
+  .navbar .search-icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 25px;
+    right: 300px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../../asset/search.png"); /* Ganti dengan URL gambar ikon search yang sesuai */
+    background-size: cover;
+  }
+
+  /* Gaya untuk input search */
+  .navbar .search-input {
+    padding-left: 30px; /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
+  }
+}
+
+.navbar .active {
+  color: var(--primary-color) !important;
+}
+
+/* Akhir Navbar */
+
+/* Slide Iklan */
+
+.sliderIklanHead {
+  margin: 120px 0;
+}
+.carousel-inner img {
+  width: 1152px;
+  height: 273px;
+  border-radius: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  width: 32px;
+}
+
+/* Akhir Slide Iklan */
+
+/* kategori */
+
+.kategori {
+  display: flex;
+  padding: 17px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 31px 69px 0px rgba(0, 0, 0, 0.1);
+}
+
+.kategori a {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.kategori h5 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+}
+.kategori .card {
+  border-radius: 19px;
+}
+
+.kategori .card-img {
+  border-radius: 19px;
+}
+
+/* Akhir kategori */
+
+/* Toko */
+.tokoPopuler {
+  margin: 50px 0;
+  padding: 17px 0px;
+  border-top: 0.4px #078a34 solid;
+}
+
+.tokoPopuler a {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Akhir Toko */
+
+.bg-tokoPop .card {
+  padding: 20px 30px;
+}
+
+.cardToko {
+  display: flex;
+  width: 296px;
+  padding: 20px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardToko p {
+  margin: 0;
+  color: #078a34;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.cardToko btn {
+  padding: 2px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #078a34;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <!-- link Bootsrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+
+    <!--  link My style -->
+    <link rel="stylesheet" href="landingpage.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid px-lg-5">
+        <img src="./src/logo.png" alt="" class="image-logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><img src="./src/home.png" alt="" class="imageSmall" />
+                Beranda</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="./src/category.png" alt="" class="imageSmall" />
+                Kategori
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+
+            <div class="image-container">
+              <div class="linkSmall">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><img src="./src/wishlist.png" alt="" class="imageSmall" />
+                    Wishlist</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link cartImage" aria-current="page" href="#"
+                    ><img src="./src/cart.png" alt="" class="imageSmall" />
+                    <div class="badge">10</div>
+                    Cart</a
+                  >
+                </li>
+              </div>
+              <li class="nav-item dropdown imageSmall">
+                <a
+                  class="nav-link dropdown-toggle imageSmall"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="./src/user.png" alt="" class="imageSmall" /> Profile
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Cari Produk"
+                  aria-label="Search" />
+                <span class="search-icon"></span>
+              </form>
+              <a href="" class="nav-link images">
+                <img src="./src/wishlist.png" alt="" class="images" />
+              </a>
+
+              <a href="" class="nav-link images cartImage">
+                <img src="./src/cart.png" alt="" class="images" />
+                <div class="badge">10</div>
+              </a>
+              <li class="nav-item dropdown images">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="./src/profile.png" alt="" class="images" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <div class="container">
+      <!-- slide iklan head -->
+      <section class="sliderIklanHead">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="src/slide1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="src/slide2.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="src/slide3.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Akhir slide iklan head -->
+
+      <!-- kategori -->
+      <section class="kategori">
+        <div
+          class="container d-flex justify-content-start align-items-center gap-3">
+          <img style="width: 28px; height: 28px" src="src/iconKategori.png" />
+          <a href="#" class="text-decoration-none">KATEGORI</a>
+        </div>
+        <section class="container">
+          <div
+            class="d-flex justify-content-between row g-1 row-cols-lg-1 row-cols-lg-5">
+            <div class="card">
+              <img src="./src/furniture.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Furniture</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./src/elektronik.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Elektronik</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./src/fashion.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Fashion</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./src/aksesoris.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Aksesoris</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./src/buku.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Buku</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Toko Populer -->
+      <section class="tokoPopuler">
+        <div
+          class="container d-flex justify-content-start align-items-center gap-3">
+          <img style="width: 30px; height: 30px" src="src/icontoko.png" />
+          <a href="#" class="text-decoration-none">TOKO</a>
+        </div>
+        <div class="bg_tokoPop">
+          <img src="src/bg_toko.png" alt="" />
+          <div class="cardToko">
+            <div class="container">
+              <div class="row mb-2">
+                <div class="col">
+                  <img src="src/toko1.png" alt="" />
+                </div>
+                <div class="col">
+                  <h4>Mc Donald's</h4>
+                  <p>Online 2 jam lalu</p>
+                  <div class="d-flex gap-1">
+                    <svg
+                      width="8"
+                      height="9"
+                      viewBox="0 0 8 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        id="Vector"
+                        d="M0.655162 2.84909L7.23007 1.00812C7.38959 0.963454 7.53654 1.11043 7.49189 1.26994L5.6509 7.84482C5.59712 8.03688 5.33224 8.05566 5.25195 7.87311L3.87198 4.73687C3.85061 4.68823 3.81174 4.6494 3.7631 4.62799L0.62689 3.24806C0.444342 3.16774 0.463115 2.90286 0.655162 2.84909Z"
+                        stroke="#078A34"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    <p>Jakarta Selatan</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div
+                  class="col"
+                  type="button"
+                  style="border-radius: 5px #078a34">
+                  Follow
+                </div>
+                <div class="col" type="button">Chat Penjual</div>
+                <div class="col" type="button">
+                  <svg
+                    width="9"
+                    height="8"
+                    viewBox="0 0 9 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g
+                      id="&#240;&#159;&#166;&#134; icon &#34;small shop alt&#34;">
+                      <path
+                        id="Vector"
+                        d="M1.29883 3.33301V6.33306C1.29883 6.70127 1.61726 6.99974 2.01007 6.99974H6.98873C7.38154 6.99974 7.69997 6.70127 7.69997 6.33306V3.33301"
+                        stroke="#078A34" />
+                      <path
+                        id="Vector_2"
+                        d="M5.50676 6.99972V4.99969C5.50676 4.63148 5.18833 4.33301 4.79552 4.33301H4.08428C3.69148 4.33301 3.37305 4.63148 3.37305 4.99969V6.99972"
+                        stroke="#078A34"
+                        stroke-miterlimit="16" />
+                      <path
+                        id="Vector_3"
+                        d="M7.99105 3.12143L7.38863 1.14506C7.36245 1.0592 7.27874 1 7.18347 1H5.74414L5.91317 2.90129C5.91871 2.96351 5.95477 3.01972 6.01199 3.05169C6.15044 3.12903 6.42167 3.27237 6.63319 3.33338C6.99442 3.43755 7.52252 3.39998 7.82327 3.36531C7.94834 3.35091 8.02568 3.23501 7.99105 3.12143Z"
+                        stroke="#078A34" />
+                      <path
+                        id="Vector_4"
+                        d="M5.21165 3.33338C5.41346 3.27517 5.66965 3.142 5.81296 3.06273C5.88121 3.02499 5.91876 2.95371 5.91218 2.87972L5.74508 1H3.25574L3.08863 2.87972C3.08205 2.95371 3.11962 3.02499 3.18784 3.06273C3.33116 3.142 3.58736 3.27517 3.78917 3.33338C4.32011 3.48651 4.68071 3.48651 5.21165 3.33338Z"
+                        stroke="#078A34" />
+                      <path
+                        id="Vector_5"
+                        d="M1.6107 1.14506L1.00828 3.12143C0.973664 3.23501 1.05101 3.35091 1.17608 3.36531C1.47681 3.39998 2.00493 3.43755 2.36616 3.33338C2.57767 3.27237 2.84891 3.12903 2.98734 3.05169C3.04456 3.01972 3.08064 2.96351 3.08617 2.90129L3.2552 1H1.81586C1.7206 1 1.63687 1.0592 1.6107 1.14506Z"
+                        stroke="#078A34" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="col" type="">
+                  <svg
+                    width="7"
+                    height="8"
+                    viewBox="0 0 7 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g
+                      id="&#240;&#159;&#166;&#134; icon &#34;share android&#34;">
+                      <path
+                        id="Vector"
+                        d="M5.49961 7.00019C5.99667 7.00019 6.3996 6.59726 6.3996 6.10019C6.3996 5.60312 5.99667 5.2002 5.49961 5.2002C5.00254 5.2002 4.59961 5.60312 4.59961 6.10019C4.59961 6.59726 5.00254 7.00019 5.49961 7.00019Z"
+                        stroke="#078A34"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        id="Vector_2"
+                        d="M5.49961 2.79999C5.99667 2.79999 6.3996 2.39705 6.3996 1.9C6.3996 1.40294 5.99667 1 5.49961 1C5.00254 1 4.59961 1.40294 4.59961 1.9C4.59961 2.39705 5.00254 2.79999 5.49961 2.79999Z"
+                        stroke="#078A34"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        id="Vector_3"
+                        d="M1.9 4.90009C2.39705 4.90009 2.79999 4.49716 2.79999 4.00009C2.79999 3.50303 2.39705 3.1001 1.9 3.1001C1.40294 3.1001 1 3.50303 1 4.00009C1 4.49716 1.40294 4.90009 1.9 4.90009Z"
+                        stroke="#078A34"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        id="Vector_4"
+                        d="M4.75038 2.3501L2.65039 3.55009"
+                        stroke="#078A34" />
+                      <path
+                        id="Vector_5"
+                        d="M2.65039 4.44971L4.75038 5.6497"
+                        stroke="#078A34" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">1 of 3</div>
+                <div class="col">2 of 3</div>
+                <div class="col">3 of 3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
