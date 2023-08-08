@@ -1,12 +1,22 @@
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-.row > * {
-  width: 194px;
-  padding: 0;
-  margin: 0;
+
+
+
+.mt-4 {
+  margin-top: 50px !important;
+}
+
+.mt-5 {
+  margin-top: 120px !important;
+}
+
+
+.btn-outline-success {
+  color: #078a34;
 }
 
 /* Navbar */
@@ -86,13 +96,15 @@ body {
     right: 40px;
     width: 25px;
     height: 25px;
-    background-image: url("../../asset/search.png"); /* Ganti dengan URL gambar ikon search yang sesuai */
+    background-image: url("../../asset/search.png");
+    /* Ganti dengan URL gambar ikon search yang sesuai */
     background-size: cover;
   }
 
   /* Gaya untuk input search */
   .navbar .search-input {
-    padding-left: 30px; /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
+    padding-left: 30px;
+    /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
   }
 }
 
@@ -178,13 +190,15 @@ body {
     right: 40px;
     width: 25px;
     height: 25px;
-    background-image: url("../../asset/search.png"); /* Ganti dengan URL gambar ikon search yang sesuai */
+    background-image: url("../../asset/search.png");
+    /* Ganti dengan URL gambar ikon search yang sesuai */
     background-size: cover;
   }
 
   /* Gaya untuk input search */
   .navbar .search-input {
-    padding-left: 30px; /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
+    padding-left: 30px;
+    /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
   }
 }
 
@@ -204,6 +218,7 @@ body {
     font-size: 16px;
     padding: 8px 10px;
   }
+
   .navbar .navbar-nav {
     flex: content;
     align-items: center;
@@ -261,13 +276,15 @@ body {
     right: 300px;
     width: 25px;
     height: 25px;
-    background-image: url("../../asset/search.png"); /* Ganti dengan URL gambar ikon search yang sesuai */
+    background-image: url("../../asset/search.png");
+    /* Ganti dengan URL gambar ikon search yang sesuai */
     background-size: cover;
   }
 
   /* Gaya untuk input search */
   .navbar .search-input {
-    padding-left: 30px; /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
+    padding-left: 30px;
+    /* Untuk memberi ruang pada kiri input agar ikon tidak tumpang tindih */
   }
 }
 
@@ -279,9 +296,6 @@ body {
 
 /* Slide Iklan */
 
-.sliderIklanHead {
-  margin: 120px 0;
-}
 .carousel-inner img {
   width: 1152px;
   height: 273px;
@@ -321,6 +335,7 @@ body {
   font-weight: 600;
   line-height: normal;
 }
+
 .kategori h5 {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -328,8 +343,14 @@ body {
   font-weight: 600;
   line-height: normal;
 }
+
+
+
 .kategori .card {
   border-radius: 19px;
+  width: 194px;
+  padding: 0;
+  margin: 0;
 }
 
 .kategori .card-img {
@@ -341,8 +362,8 @@ body {
 /* Toko */
 .tokoPopuler {
   margin: 50px 0;
-  padding: 17px 0px;
-  border-top: 0.4px #078a34 solid;
+  padding: 15px 0px;
+  border-top: 0.8px #078a34 solid;
 }
 
 .tokoPopuler a {
@@ -353,16 +374,10 @@ body {
   line-height: normal;
 }
 
-/* Akhir Toko */
 
-.bg-tokoPop .card {
-  padding: 20px 30px;
-}
 
 .cardToko {
-  display: flex;
-  width: 296px;
-  padding: 20px 30px;
+  padding: 15px 15px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
@@ -374,14 +389,39 @@ body {
 .cardToko p {
   margin: 0;
   color: #078a34;
-  font-size: 8px;
+  font-size: 6px;
   font-weight: 400;
 }
 
-.cardToko btn {
-  padding: 2px 20px;
+
+/* Akhir Toko */
+
+
+
+/* Barang Promo */
+.barangSpecial {
+  margin: 50px 0;
+  padding: 15px 0px;
+  border-top: 0.8px #078a34 solid;
+}
+
+.barangSpecial a {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card-body p {
+  font-size: 8px;
+}
+
+.card-body .diskon {
+  display: flex;
+  padding: 0px 4px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: #078a34;
+  background: #D7D7D7;
 }
