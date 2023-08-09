@@ -169,40 +169,60 @@
         <div class="row">
           <div class="col-12 col-md-12 col-lg-4">
             <div class="row">
-              <div class="col-12">
-                <div class="image-product">
+              <div class="col-12 col-md-9 col-lg-12">
+                <div class="image-product shimmer">
                   <img src="../asset/product.png" alt="" />
                 </div>
               </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-3">
-                    <div class="image-product-other">
-                      <a href="">
+              <div class="col-12 col-md-3 col-lg-12">
+                <div class="row sides">
+                  <div class="col-3 col-lg-3 col-md-12 side">
+                    <a href="">
+                      <div class="image-product-other">
                         <img src="../asset/product1.png" alt="" />
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="col-3">
-                    <div class="image-product-other">
-                      <a href="">
+                  <div class="col-3 col-lg-3 col-md-12 side">
+                    <a href="">
+                      <div class="image-product-other">
                         <img src="../asset/product2.png" alt="" />
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="col-3">
-                    <div class="image-product-other">
-                      <a href="">
+                  <div class="col-3 col-lg-3 col-md-12 side">
+                    <a href="">
+                      <div class="image-product-other">
                         <img src="../asset/product3.png" alt="" />
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="col-3">
-                    <div class="image-product-other">
-                      <a href="">
+                  <div class="col-3 col-lg-3 col-md-12 side">
+                    <a href="">
+                      <div class="image-product-other">
                         <img src="../asset/product4.png" alt="" />
-                      </a>
-                    </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 d-none d-lg-inline d-md-none mt-lg-4">
+                <div class="row">
+                  <div class="col-6 shares">
+                    <span>Share :</span> <a href="">
+                      <img src="../asset/instagram.png" alt="" class="share-logo">
+                    </a> <a href="">
+                      <img src="../asset/telegram.png" alt="" class="share-logo">
+                    </a> <a href="">
+                      <img src="../asset/facebook.png" alt="" class="share-logo">
+                    </a> <a href="">
+                      <img src="../asset/image 18.png" alt="" class="share-logo">
+                    </a>
+                  </div>
+                  <div class="col-6 line">
+                    <a href="">
+                      <img src="../asset/wishlist.png" alt="" class="share-logo"> Favorite (17)
+                    </a>
                   </div>
                 </div>
               </div>
@@ -229,7 +249,7 @@
               </div>
             </div>
             <h2 class="mt-4">Rp. 16.500.000</h2>
-            <div class="col-6">
+            <div class="col-12 col-md-6 col-lg-6">
               <div class="deliver">
                 <h5>Pengiriman</h5>
                 <div class="text">
@@ -246,7 +266,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-10">
+            <div class="col-12 col-lg-10">
               <div class="size-product">
                 <h6>Pilih Ukuran : <span>INTER</span></h6>
                 <div class="allsize">
@@ -275,21 +295,514 @@
                     <a href="" class="btn sizeBtn">512GB MIDNIGHT</a>
                   </div>
                   <div class="variant">
-                    <a href="" class="btn sizeBtn soldItem">512GB STARLIGHT</a>
+                    <a href="" class="btn sizeBtn soldItem" disabled>512GB STARLIGHT</a>
                   </div>
                 </div>
-                    <div class="quantity">
-                      <h6>Kuantitas :</h6>
-                      <div class="operation">
-                        <button class="btn operator">-</button>
-                        <input type="number" class="btn count" value="1">
-                        <button class="btn operator">+</button>
-                      </div>
+                <div class="quantity">
+                  <h6>Kuantitas :</h6>
+                  <div class="operation">
+                    <button class="btn operator">-</button>
+                    <input type="number" class="btn count" value="1" />
+                    <button class="btn operator">+</button>
+                  </div>
                 </div>
               </div>
               <div class="button-submit">
-                <button class="btn btnCart"><img src="../asset/shoppingCart.png" alt=""> Tambah ke Keranjang</button>
+                <button class="btn btnCart">
+                  <img src="../asset/shoppingCart.png" alt="" /> Tambah ke
+                  Keranjang
+                </button>
                 <button class="btn btnBuyNow">Beli Sekarang</button>
+              </div>
+              <div class="button-cart">
+                <button class="btn btnCart">
+                  <img src="../asset/shoppingCart.png" alt="" /> Tambah ke
+                  Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="description">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-detail-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-detail"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-detail"
+                    aria-selected="true"
+                  >
+                    Detail
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-spesifikasi-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-spesifikasi"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-spesifikasi"
+                    aria-selected="false"
+                  >
+                    Spesifikasi
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-infopenting-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-infopenting"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-infopenting"
+                    aria-selected="false"
+                  >
+                    Info Penting
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-detail"
+                  role="tabpanel"
+                  aria-labelledby="pills-detail-tab"
+                >
+                  <p>Kondisi: Baru</p>
+                  <p>Min. Pemesanan: 1 Buah</p>
+                  <p>Etalase: Apple Macbook Air M2 2022</p>
+                  <br />
+                  <p>Sekilas info tentang kami :</p>
+                  <ol>
+                    <li>Brand new - Original - Segel</li>
+                    <li>Garansi Resmi Apple 1 Tahun, Garansi Toko 7 Hari</li>
+                    <li>
+                      Gratis Ongkir & Asuransi + Cashback up to 300rb + Bisa COD
+                    </li>
+                    <li>Positif review 99 % dari 100 % kepuasan customer</li>
+                    <li>Sudah melayani 100,000 ++ customer secara online</li>
+                    <li>After sales yg siap melayani anda selama 24 jam</li>
+                  </ol>
+                  <br />
+                  <ul>
+                    <li>
+                      RESELLER / DROPSHIPER Welcome- SPECIALPRICE untuk repeat
+                      order
+                    </li>
+                    <li>Menerima pengadaan kantor atau perusahaan</li>
+                    <li>
+                      Kami memiliki offline store untuk pelayanan AFTERSALES
+                    </li>
+                    <li>Bisa self pickup di toko kami (Wajib Konfirmasi)</li>
+                  </ul>
+                  <br />
+                  <p>Include in the Box :30W USB-C Power Adapter</p>
+                  <p>USB-C to MagSafe 3 Cable (2 m)</p>
+                  <br />
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-spesifikasi"
+                  role="tabpanel"
+                  aria-labelledby="pills-spesifikasi-tab"
+                >
+                  <p>Spesifikasi :</p>
+                  <ol>
+                    <li>Apple M2 chip</li>
+                    <li>8-core GPU (256GB)</li>
+                    <li>10-Core GPU (512GB)</li>
+                    <li>Liquid Retina display</li>
+                    <li>Two Thunderbolt / USB 4 ports</li>
+                    <li>8GB unified memory</li>
+                    <li>Backlit Magic Keyboard</li>
+                    <li>Touch IDmacOS Monterey</li>
+                  </ol>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-infopenting"
+                  role="tabpanel"
+                  aria-labelledby="pills-infopenting-tab"
+                >
+                  <p>PENTING !!!</p>
+                  <p>
+                    Komplain WAJIB memberikan video UNBOXING, tanpa video
+                    unboxing komplain kerusakan/kekurangan tidak diterima.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-10 col-lg-6">
+            <div class="shop-status">
+              <div class="row">
+                <div class="col-2">
+                  <img src="../asset/image 19.png" alt="" class="image-shop" />
+                </div>
+                <div class="col-10">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-6">
+                        <h6>Studio Ponsel</h6>
+                        <p class="status">.Online</p>
+                      </div>
+                      <div class="col-6 d-flex d-md-none d-lg-none">
+                        <div class="row">
+                          <div class="col-12">
+                            <button class="btn btnChat">
+                              <img src="../asset/chat 1.png" alt="" /> Chat
+                              Sekarang
+                            </button>
+                          </div>
+                          <div class="col-12">
+                            <button class="btn btnKunjungi">
+                              Kunjungi Toko
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 d-none d-md-inline d-lg-inline">
+                        <a href="" class="btn btnChat">
+                          <img src="../asset/chat 1.png" alt="" /> Chat Sekarang
+                        </a>
+                      </div>
+                      <div class="col-4 d-none d-md-inline d-lg-inline">
+                        <a href="" class="btn btnKunjungi">Kunjungi Toko</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-none d-lg-inline d-md-inline">
+                    <div class="review">
+                      <div class="row">
+                        <div class="col-4">
+                          <p class="text">
+                            Penilaian <span class="value">4,4RB</span>
+                          </p>
+                        </div>
+                        <div class="col-4">
+                          <p class="text">
+                            Produk <span class="value">20</span>
+                          </p>
+                        </div>
+                        <div class="col-4">
+                          <p class="text">
+                            Pengikut <span class="value">20,4RB</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 d-inline d-lg-none d-md-none">
+                  <div class="review">
+                    <div class="row">
+                      <div class="col-4">
+                        <p class="text">
+                          Penilaian <span class="value">4,4RB</span>
+                        </p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text">Produk <span class="value">20</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text">
+                          Pengikut <span class="value">20,4RB</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="rating">
+              <div class="row">
+                <div class="col-12 col-lg-3 col-md-3">
+                  <h4>ULASAN PEMBELI</h4>
+                  <span class="star">
+                    <img src="../asset/star.png" alt="" />
+                    <div class="point-wrapper">
+                      <div class="point">4.8</div>
+                      <span class="ofPoint">/ 5.0</span>
+                    </div>
+                    <div class="d-inline d-lg-none d-md-none vals">
+                      120 penilaian
+                    </div>
+                  </span>
+                  <div class="review d-none d-lg-flex d-md-flex">
+                    <span>96 % pembeli merasa puas</span>
+                    <div class="value">120 penilaian</div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-9 mt-lg-5 mt-md-5">
+                  <div class="comments">
+                    <div class="review">
+                      <div class="row">
+                        <div class="col-12">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                          <span class="days">1 hari lalu</span>
+                        </div>
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-1">
+                              <img
+                                src="../asset/profilecomment.png"
+                                alt=""
+                                class="profile"
+                              />
+                            </div>
+                            <div class="col-10">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="comment-name">
+                                    Denson Patibang
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="comment-variant">
+                                    Varian : IBOX - 256GB - STARLIGHT
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p class="comment-fill">
+                                Sudah mendarat dengan baik. Packing bubble wrap
+                                tebal, sudut box sedikit penyok tp overall aman
+                              </p>
+                            </div>
+                            <div class="col-8">
+                              <div class="images">
+                                <img
+                                  src="../asset/review1.png"
+                                  alt=""
+                                  class="image-comment"
+                                />
+                                <img
+                                  src="../asset/review2.png"
+                                  alt=""
+                                  class="image-comment"
+                                />
+                                <img
+                                  src="../asset/review3.png"
+                                  alt=""
+                                  class="image-comment"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments">
+                    <div class="review">
+                      <div class="row">
+                        <div class="col-12">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                          <span class="days">1 hari lalu</span>
+                        </div>
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-1">
+                              <img
+                                src="../asset/profilecomment.png"
+                                alt=""
+                                class="profile"
+                              />
+                            </div>
+                            <div class="col-10">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="comment-name">
+                                    Denson Patibang
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="comment-variant">
+                                    Varian : IBOX - 256GB - STARLIGHT
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p class="comment-fill">
+                                Sudah mendarat dengan baik. Packing bubble wrap
+                                tebal, sudut box sedikit penyok tp overall aman
+                              </p>
+                            </div>
+                            <div class="col-8">
+                              <div class="images">
+                                <img
+                                  src="../asset/review1.png"
+                                  alt=""
+                                  class="image-comment"
+                                />
+                                <img
+                                  src="../asset/review2.png"
+                                  alt=""
+                                  class="image-comment"
+                                />
+                                <img
+                                  src="../asset/review3.png"
+                                  alt=""
+                                  class="image-comment"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&lt;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link active" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&gt;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="other-product">
+              <h5>Produk Lainnya</h5>
+              <div class="row">
+                <div class="col-12 text-end">
+                  <a href="" class="text">Lihat Semua</a>
+                </div>
+                <div class="products">
+                  <div class="card">
+                    <img
+                      src="../asset/products1.png"
+                      alt=""
+                      class="product-image"
+                    />
+                    <div class="content">
+                      <h6>
+                        Kabel Charger Anker 322 USB-C to USB-C Cable (6ft Braided)
+                        - A81F6 - Hitam
+                      </h6>
+                      <h5>Rp. 62.000</h5>
+                      <div class="location">
+                        <img src="../asset/badges.png" alt="" /> Jakarta
+                      </div>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i> 4.7 | <span>Terjual 1.2RB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="../asset/products2.png"
+                      alt=""
+                      class="product-image"
+                    />
+                    <div class="content">
+                      <h6>
+                        TWS Anker Soundcore A2Oi-A3948-Hitam
+                      </h6>
+                      <h5>Rp. 50.000</h5>
+                      <div class="location">
+                        <img src="../asset/badges.png" alt="" /> Bogor
+                      </div>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i> 4.9 | <span>Terjual 1.2RB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="../asset/products3.png"
+                      alt=""
+                      class="product-image"
+                    />
+                    <div class="content">
+                      <h6>
+                        AONEZ 5 Layers Minimalis Rak Sepatu Besi Bertingkat Rak Susun Sepatu
+                      </h6>
+                      <h5>Rp. 82.000</h5>
+                      <div class="location">
+                        <img src="../asset/badges.png" alt="" /> Bekasi
+                      </div>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i> 4.7 | <span>Terjual 1.2RB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="../asset/products4.png"
+                      alt=""
+                      class="product-image"
+                    />
+                    <div class="content">
+                      <h6>
+                        GARAF KELVI KEMEJA PRIA LENGAN PANJANG SLIMFIT ATASAN 
+                      </h6>
+                      <h5>Rp. 48.000</h5>
+                      <div class="location">
+                        <img src="../asset/badges.png" alt="" /> Bogor
+                      </div>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i> 4.7 | <span>Terjual 1.2RB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="../asset/products5.png"
+                      alt=""
+                      class="product-image"
+                    />
+                    <div class="content">
+                      <h6>
+                        TEPUNG TERIGU CAKRA KEMBAR EMAS ROTI 5 KG - 1 pcs
+                      </h6>
+                      <h5>Rp. 62.000</h5>
+                      <div class="location">
+                        <img src="../asset/badges.png" alt="" /> Jakarta
+                      </div>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i> 4.7 | <span>Terjual 1.2RB</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid px-lg-5">
+        <img src="../asset/logo.png" alt="" class="image-logo" />
+      </div>
+    </nav>
+
+    <main>
+      <section class="delivery">
+        <div class="container">
+          <h4>Checkout</h4>
+
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="delivery-address">
+                <h5 class="mb-lg-4">Alamat Pengiriman</h5>
+                <div class="address">
+                  <div class="row">
+                    <div class="col-12 col-lg-8 px-0 px-lg-3">
+                      <div class="name">
+                        denson <span class="location">(Rumah)</span>
+                        <div class="badge">Utama</div>
+                      </div>
+                      <div class="phone">(+62) 895 - 3272 - 72758</div>
+                      <div class="detail-address">
+                        Jl. Telegraf IV C3/94 Biring Kanaya, Kota Makassar,
+                        78902
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4 px-0 px-lg-3 text-end">
+                      <button type="button" class="btn btnAddress">
+                        Ubah Alamat
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery-product">
+                <h5 class="mb-lg-4 mt-4">Produk yang dipesan</h5>
+                <div class="products">
+                  <div class="shop-name">Studio Ponsel</div>
+                  <div class="shop-location">
+                    <img src="../asset/badges.png" alt="" /> Jakarta
+                  </div>
+                  <div class="row mt-lg-3">
+                    <div class="col-2 col-lg-2 mt-1">
+                      <img
+                        src="../asset/product.png"
+                        alt=""
+                        class="product-image"
+                      />
+                    </div>
+                    <div class="col-10 col-lg-6 ps-0 ps-lg-3">
+                      <div class="product-name">
+                        MacBook Air 2022 M2 Chip 13" Inch 512GB 256GB RAM 8GB
+                        Apple IBOX - INTER, 256GB MIDNIGHT
+                      </div>
+                      <div class="product-variant">
+                        Varian : INTER, 256GB MIDNIGHT 1 barang (3 kg)
+                      </div>
+                      <div class="product-price">Rp 16.645.000</div>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-lg-0 mt-2">
+                      <div class="opsion d-none d-md-none  d-lg-inline">
+                        Opsi Pengiriman
+                      </div>
+                      <select class="form-control deliv" name="" id="">
+                        <option class="deliv-value" value="" selected>
+                          Pilih Pengiriman
+                        </option>
+                        <option class="deliv-value" value="JNE">JNE</option>
+                        <option class="deliv-value" value="JNT">JNT</option>
+                        <option class="deliv-value" value="SICEPAT">
+                          SICEPAT
+                        </option>
+                      </select>
+                      <div class="delivers d-lg-none d-md-inline d-inline">
+                        <div class="card">
+                          <button
+                            type="button"
+                            class="btn btnDelivers"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            <img src="../asset/delivery-truck.png" alt="" />
+                            <div class="text">Pilih Pengiriman</div>
+                            <div class="arrow">></div>
+                          </button>
+
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel"
+                                  >
+                                    Pilih Pengiriman
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <ul class="list-shipper">
+                                    <li>
+                                      <h6>Instan <span class="price">(Rp. 38.000)</span></h6>
+                                      <div class="estimasi">
+                                        Estimasi tiba hari ini - besok
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <h6>Same Day <span class="price">(Rp. 14.200)</span></h6>
+                                      <div class="estimasi">
+                                        Estimasi tiba besok
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <h6>Next Day <span class="price">(Rp. 9.000 - Rp. 11.200)</span></h6>
+                                      <div class="estimasi">
+                                        Estimasi tiba besok - 12 Agustus
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <h6>Regular <span class="price">(Rp. 5.000 - Rp 9.500)</span></h6>
+                                      <div class="estimasi">
+                                        Estimasi tiba 11 - 14 Agustus
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kurirs">
+                        <div class="kurs1">
+                          <div class="card">
+                            <div class="opsion mt-lg-3">Kurir Pilihan</div>
+                            <div class="kurir">JNE (Rp. 225.000)</div>
+                            <div class="kurir">Estimasi tiba besok - 1 Aug</div>
+                            <div class="asuransi">
+                              <input type="checkbox" name="" id="" />
+                              <label for="">Wajib Asuransi</label>
+                            </div>
+                            <div class="dropshipper">
+                              <input type="checkbox" name="" id="" />
+                              <label for="">Dropshipper</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kurs2">
+                          <div class="opsion mt-lg-3">Kurir Pilihan</div>
+                          <div class="kurir">JNE (Rp. 225.000)</div>
+                          <div class="kurir">Estimasi tiba besok - 1 Aug</div>
+                          <div class="asuransi">
+                            <input type="checkbox" name="" id="" />
+                            <label for="">Wajib Asuransi</label>
+                          </div>
+                          <div class="dropshipper">
+                            <input type="checkbox" name="" id="" />
+                            <label for="">Dropshipper</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery-total-payment">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Subtotal
+                        <h6>Rp 17.056.000</h6>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <div class="objectPayment">Harga (1 barang)</div>
+                        <div class="price">Rp 16.645.000</div>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="objectPayment">Ongkos Kirim</div>
+                        <div class="price">Rp 225.000</div>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="objectPayment">Asuransi Pengiriman</div>
+                        <div class="price">Rp 101.300</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="paynow">
+                <div class="card discountCard">
+                  <div class="card-body">
+                    <div class="card">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btnDiscount"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2"
+                      >
+                        <img src="../asset/discount 1.png" alt="" /> Makin hemat
+                        pakai promo
+                        <div class="arrow">></div>
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal2"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal2Label"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header promoHeader">
+                              <h5 class="modal-title" id="exampleModal2Label">
+                                Pakai Promo
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body promoBody">
+                              <div class="row lineOne">
+                                <div class="col-8 col-lg-9">
+                                  <input class="form-control inputPromo" type="text" placeholder="Masukkan Kode">
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                  <button class="btnPromo">
+                                    Terapkan
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coupon-slide">
+                              <div class="container">
+                                <h6>Promo dipilih</h6>
+                                <div class="slides slides-active">
+                                  <div class="coupons">
+                                    <div class="card active">
+                                      <h6 class="type-coupon">
+                                        Diskon 10% hingga Rp20.000
+                                      </h6>
+                                      <div class="description">
+                                        Promo ini hanya berlaku untuk pembelian di toko Philips Lighting Store.
+                                      </div>
+                                      <div class="duration">
+                                        Berakhir 22 hari lagi! <a href="">Lihat Detail</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <h6>Promo yang belum di pakai</h6>
+                                <h6 class="text-coupon"><img src="../asset/coupon.png" alt=""> Kupon Saya</h6>
+                                <div class="slides">
+                                  <div class="coupons">
+                                    
+                                    <div class="card">
+                                      <h6 class="type-coupon">
+                                        Diskon 10% hingga Rp20.000
+                                      </h6>
+                                      <div class="description">
+                                        Promo ini hanya berlaku untuk pembelian di toko Philips Lighting Store.
+                                      </div>
+                                      <div class="duration">
+                                        Berakhir 22 hari lagi! <a href="">Lihat Detail</a>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <h6 class="type-coupon">
+                                        Diskon 10% hingga Rp20.000
+                                      </h6>
+                                      <div class="description">
+                                        Promo ini hanya berlaku untuk pembelian di toko Philips Lighting Store.
+                                      </div>
+                                      <div class="duration">
+                                        Berakhir 22 hari lagi! <a href="">Lihat Detail</a>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <h6 class="type-coupon">
+                                        Diskon 10% hingga Rp20.000
+                                      </h6>
+                                      <div class="description">
+                                        Promo ini hanya berlaku untuk pembelian di toko Philips Lighting Store.
+                                      </div>
+                                      <div class="duration">
+                                        Berakhir 22 hari lagi! <a href="">Lihat Detail</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="metode-payment">
+                      <h6>Metode Pembayaran</h6>
+                      <div class="btnPayment">
+                        <button class="btn btnCod">
+                          COD (Bayar di tempat)
+                        </button>
+                        <button class="btn btnTransfer">Transfer</button>
+                        <button class="btn btnDebit">Kartu Kredit</button>
+                      </div>
+                      <h6 class="mt-3">Ringkasan Belanja</h6>
+                      <div class="ringkasan">
+                        <div class="ringkasan-payment">
+                          <div class="products">Total Harga (1 Produk)</div>
+                          <div class="price">Rp. 16.645.000</div>
+                        </div>
+                        <div class="ringkasan-payment">
+                          <div class="products">Total Ongkos Kirim</div>
+                          <div class="price">Rp. 225.000</div>
+                        </div>
+                        <div class="ringkasan-payment">
+                          <div class="products">Asuransi Pengiriman</div>
+                          <div class="price">Rp. 101.300</div>
+                        </div>
+                      </div>
+                      <div class="total-payment">
+                        <h6>Total Belanja</h6>
+                        <h6>Rp. 17.059.000</h6>
+                      </div>
+                      <div class="syarat-ketentuan">
+                        <input type="checkbox" class="checkbox" /> Dengan
+                        mengaktifkan asuransi, Saya menyetujui
+                        <a href=""> syarat dan ketentuan </a> yang berlaku.
+                      </div>
+                      <button class="btn btnSubmit">Bayar Sekarang</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12 text-end">
+            Since 2023 <img src="../asset/logo.png" alt="" class="image-logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
