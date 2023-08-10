@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/78c61969f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./style/navbar.css" rel="stylesheet" />
+    <link href="./style/category.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid px-lg-5">
+        <img src="./src/logo.png" alt="" class="image-logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><img src="./src/home.png" alt="" class="imageSmall" />
+                Beranda</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./src/category.png" alt="" class="imageSmall" />
+                Kategori
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+
+            <div class="image-container">
+              <div class="linkSmall">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><img src="./src/wishlist.png" alt="" class="imageSmall" />
+                    Wishlist</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link cartImage" aria-current="page" href="#"
+                    ><img src="./src/cart.png" alt="" class="imageSmall" />
+                    <div class="badge">10</div>
+                    Cart
+                  </a>
+                </li>
+              </div>
+              <li class="nav-item dropdown imageSmall">
+                <a
+                  class="nav-link dropdown-toggle imageSmall"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="./src/user.png" alt="" class="imageSmall" /> Profile
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Cari Produk"
+                  aria-label="Search"
+                />
+                <span class="search-icon"></span>
+              </form>
+              <a href="" class="nav-link images">
+                <img src="./src/wishlist.png" alt="" class="images" />
+              </a>
+
+              <a href="" class="nav-link images cartImage">
+                <img src="./src/cart.png" alt="" class="images" />
+                <div class="badge">10</div>
+              </a>
+              <li class="nav-item dropdown images">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="./src/profile.png" alt="" class="images" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <div class="container">
+      <div class="text-label">Fashion</div>
+      <div class="group-card-row">
+        <div class="category-card">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/8e07/8266/613a6ef663f8046f96db34992e7dfdcb?Expires=1692576000&Signature=Ivl8i7Bckd3mq8dNU1QHgWBVadF~g4~7uzU~azDS53AacjtgGRBntLh~WcO~JgYs5k0PqoHrum-vnxomDy4VNGzce5zePCSuAPzJ5cj8~Q1g1ArY3RIUIDEP2I5RNWRC6zIPpyFyFazUzVVjytu3NnuqzqpEmblpE33hweLFK4XQ1JB94uNR4mlsWs2nHIeJvZXQEJ~YExcWRpQt~EvZ6nxgFuXe-vBfBJPvG7WxwvNdM56ji0Cd8xY~kLwUhGota79JI8X~Z3vzAayyLlHuCPMDRWcBxEU67QEmatFLtwG3YXcEgOuQaDd9SaRtf4JcFbXGQSd88SduWuYYfshVOg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="144"
+            height="120"
+          />
+          <div class="text-label-card">Atasan</div>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/a376/1b84/84ab280cb34f483a37dd2d7ed1e31ca0?Expires=1692576000&Signature=gzYBvgRUuCR9Cq7P-0-3zWnJLLdZqWuDoU~Hok06RJhxpos7PMLzlEe8dDLGQxut2i2Ja8Et608EilP~2fAQc-qmiroysLE1n3I1y53e4rn1-nX4hyRKhaohvmIfNzyjt6FlBl3d958xWD49BsSJfgY9NA3GnGosROg5PTEGzp5lq3SOTpektoA5-rMzR14xqfITh2tVgz12fTDvjvxIZZdUOj~Q~3G78T7saSE1z8Vi2NwCwCCbLS3OfzMsS6fSi99yWd3rQExqYz0XL40oh8o3ruYe~uN4bVDZmP2g1hz9rQr5CDpatD7uAzpGUt4ha8Ll06N8z0i0ctDAkCUWUg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="108"
+            height="96"
+          />
+          <div class="text-label-card">Bawahan</div>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/bc72/038c/43370869fc89a30aa23d0ca1be31a636?Expires=1692576000&Signature=gAZ~u-pYsSKN8kKXQXvq17RyLoudrTBwk2fA3DPLO80DD0SeTyGBpxSOLlAqXIu6NHfIXiBc7NLtyTTfyEt4vB8vROODbmdAM9fKEJxvXXrzbOxpOH04Hl7-z0C~SI2AVy2JkB9C8TJzuUcgg-XMw1HSsoScjRRTFRzth7hRbLa-9XrdWHl365zbP-tgStm4XFK6vmo~8d8TdTmKk5vWXJszRvYgBiHFkPHTA3WORv7kJKK5YTfx9RS9Z9~1yKTeskZq4RZCzKajPYI9Df-UtiM40zFbXbxTfmIicYH~YAnDQhXA7Lm9iW5NYMFoW1JnlgKB~Vv2YpG7BBzYAd8nvw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="155"
+            height="125"
+          />
+          <div class="text-label-card">Sandal</div>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/8aa3/7ea9/22f690521e4b7a1d8c4e8c26977aa9de?Expires=1692576000&Signature=cxXTAbDn4TEjGulTGOt8lp4Fnn1YSsE-KF2q9v4YHpkUIpRuWk3o1wrl9fheDPMbl9T6pK6Up5ShJ-PDPeH3cCpmN6qBhdJZUq1E7CY-CgFYboQxl5TEPwckK-Nfs0xBrLOdueT87RiFkQLeu4J2Fktg7f4Ots35cS5AREvIvN19uXVsWoOuNEiW9Ug7s8DGHAM6Isp7GKhuSeCAGg6aWpGfnF-te0~Ux3RQvPHuF1NUrtvMD7KhEUhKcs0QOMlXw8OnOheoN9gmlRlf3zQaRNsAmDqD2MKgeypkafNKK1R098a7N3MPQmmzMYqcVp4DpPj8z6GguLHCd0tVg-mZdQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="148"
+            height="98"
+          />
+          <div class="text-label-card">Tas</div>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/7141/1012/e6a743404bda6f2f806ecf17f3d210ff?Expires=1692576000&Signature=a1qRERy1x-Ys~-SDjHvleaLlC5XkT4HvzWX0gw569t9VgIpyLMwLw6E-dfZet3w2mPpzEJ1W65DqIiX~eYjlbOorWw6NvdsoowLr-r8-iTEwiK6kAS~wSNokUTGugP4lvRpbhcuIGPhl0rnLX7i4G11BQSExfxkKGrJN6BzyPCCbqr30hjdEQdz9rigu18kwGBTsT8ilATINIagrCc0~NgNE6hrvDmohI-tmxAeI~s6Qii0Mwd~Ayao8nZ-SQn6V2e4D6xM9-xIyz9bnlSfYJ02qUkfADqwJHoB5tmEXJRVflEfDLjK8JRSRUvMI4FdO2mVnqY5SMhMqk05bQoMUxA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="115"
+            height="88"
+          />
+          <div class="text-label-card">Aksesoris</div>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/bf59/e99c/f6b9be7e2311b88a7c5e7ecf7c0add32?Expires=1692576000&Signature=fvHiTJnto8UR6FY4H68SPCRqGrKtbIJhWEJ-XWUDMnTs2PiX4cGADHvpBLf8ph480l9Qk22k59cUIOLa5U0j9~4a6-4epcXgNG1br6nFjFv8YE08uF7vMuNTL2uXlE4-AZs2uaXyGhVzascrtN25GXWWhO4ck6TrXj66XlxVVbvoF1BozA5bwj7PlAIIjA9TUkiiZpuFQDuEmFNlQU~UDIBFriv3xfFKA7-oq0CG4KcOAbzswRHGtoofdbukF~YwQ8RHeriZqFg9D9MBYY8rYWVSqZZ3TbProlWH4ciJ0uBrJ9GVRpMtcq0pul6smsFInv02Gx9WrYDpx5vQ~yZtAQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="138"
+            height="85"
+          />
+          <div class="text-label-card">Sepatu</div>
+        </div>
+      </div>
+      <div class="text-navbar-row">
+        <div class="navbar-link">Home</div>
+        <div class="navbar-arrow">></div>
+        <div class="navbar-link">Fashion Wanita</div>
+        <div class="navbar-arrow">></div>
+        <div class="navbar-link">Atasan</div>
+        <div class="navbar-arrow">></div>
+        <div class="navbar-link" style="color: #078a34">
+          Atasan Sabrina Crop ......
+        </div>
+      </div>
+      <div class="product-card-row">
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="295"
+            height="238"
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="295"
+            height="238"
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="295"
+            height="238"
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="295"
+            height="238"
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="295"
+            height="238"
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="295"
+            height="238"
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            width="295"
+            height="238"
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-image"
+            src="https://s3-alpha-sig.figma.com/img/6ea4/4b86/a4312d472a57057f941b06d3fb0d029a?Expires=1692576000&Signature=QHboMibiCH1OkqGKu11n-4NnvZ8~EX3f4HzqD1c0W1rF~EkEWTv~3bTTtB-Gt~UNnuduMqvhOriCdzgHz4F8YMtZt9gcZTWqq8v1XUe8LppfGOvcV9x35qqdhGs7xrHNF1Lc7peOlVLY9m39qlY~6M-ni1bWDPoD9WSQ7sRS1hK5IfapkutqxJQQ6lLN0lC5gpz6CcgNHArlNRsAeTwP5Ql5CFbtR87uBV4n4ZngkxRxxaCYV6IP7g1QQ9vetT2NIi7rkobpSh5GU5KZeUmqCZ9w6KoV8FEnPt-uyzXfLg99Gj9gu0yU7G7gI1BcIRJGo1lEXYWxy5xygoKPV46tEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="product-card-content">
+            <div class="label-product-card">Atasan Sabrina Crop Top</div>
+            <div class="price-product-card">Rp 85.000</div>
+            <div class="location-product-card">
+              <img
+                class="location-image"
+                src="https://s3-alpha-sig.figma.com/img/a7f3/1d4e/ff030865c41ddd87bc39a76386445b84?Expires=1692576000&Signature=m0ss797Herh2cfjWmh6I8ctKurafXY0XilrRkW~oKcM4UcU9eq5Gyttn5tR4pPIOgOIUJITqOakP1vltxflrVJ9o4OolUkwpP~gVrQDbxhx9EXNWCJnZytGjQekNnvbOzuwiDFuPl4Jv8-PInqSaNgCEe82su2pi33vrfBsBKwWY6t4jJckBjUYWyn5nkgUeu1dJj4IqQWQnERwAi-NR-0nkY~uC~Pe8IBJJAX68We6Yt4oGBBsHxcGIveBlfXAuN5lYBk2kXUj7bGyp8MWM5UMzBHdDjRRk5o~lLxgDozMiCp-PmCkSBdR1Tf03pKuPyOxJ5TMqD2V9f4PdTEIIeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="location-name">Bogor</div>
+            </div>
+            <div class="rating-product-card">
+              <img
+                class="rating-image"
+                src="https://s3-alpha-sig.figma.com/img/0549/e14f/3ad2b362670cdac05c5f8edb2f4135da?Expires=1692576000&Signature=nV5f-1N0sybJ1TeU39XMimuteu14IbG0Fq8iUvG70SRjmwKU8sXwe0CyQpmT89oRa-PRoilmbTmKs~~dADVBDp85XZGFerkIt56m5QOGqpmja6nE7vOmvPYindaShYfyQQxHmMTfHUTP2eow23k4O3GbcpgoujLWTvG-NpEjB8PAiLHp2aIToaVLMU0Denhy0bVp0IdMJ2umQTQNg3IaYu0tsdzR5cmnwr720f8tQFhrorA06ladsiUwt4o9W3g2RE1mTIbcohkn09lgrD757tb44uYg7zuuggKA-O1G4sjlz2zWjlQI3Dfb6l5uGLdNfspyTAuAkzxbe5KAEG~mKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+                width="20"
+                height="18"
+              />
+              <div class="rating-text">4.7 | terjual 3 rb+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
