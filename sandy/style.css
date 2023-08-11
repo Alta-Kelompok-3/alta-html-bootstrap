@@ -4,7 +4,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-
+.text-success {
+  color: #078a34;
+}
 
 .mt-4 {
   margin-top: 50px !important;
@@ -417,6 +419,8 @@
 
 /* Akhir Barang Spesial */
 
+
+
 /* Promo Brand & Pencarian User */
 
 .promo_user .col-3 {
@@ -424,8 +428,6 @@
   display: flex;
   flex-direction: column;
 }
-
-
 
 .promo_user .card {
   width: 215px;
@@ -463,6 +465,54 @@
   z-index: calc(1);
   transform: scale(1.15);
 }
+
+/* Akhir Promo Brand & Pencarian User */
+
+
+
+
+/* cart */
+
+.form-check .premium {
+  width: 18px;
+  height: 16px;
+}
+
+.form-check label {
+  color: #078a34;
+}
+
+
+.jumlahItem {
+  border-bottom: 0.5px rgba(7, 138, 52, 0.6) solid;
+}
+
+.jumlahIndikator {
+  justify-content: center;
+  color: #078a34;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.cardCart {
+  padding: 25px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.card {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-check-input:checked {
+  background-color: #078a34;
+  border-color: #078a34;
+}
+
+
 
 
 
