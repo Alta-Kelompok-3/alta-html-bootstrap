@@ -3406,15 +3406,87 @@ body {
 }
 
 .transaction .card {
-    padding: 10px;
+    padding: 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .transaction .profile .profile-image{
     width: 100%;
+    padding: 8px;
 }
+
+.transaction .profile .user{
+    padding: 15px 0 0 0;
+}
+
+.transaction .profile .user h6{
+    margin: 0;
+}
+
+.transaction .profile .settings a{
+    padding: 0;
+    color: var(--secondary-font-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.transaction .profile .saldos{
+    padding: 20px 0;
+    width: 100%;
+    border-top: 1px solid var(--line-color);
+    border-bottom: 1px solid var(--line-color);
+}
+
+.transaction .profile .saldos .saldo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.transaction .profile .saldos .image-dollar{
+    width: 20px;
+}
+
+.transaction .profile .saldos .image-member{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.transaction .profile .saldos .membership ul{
+    list-style: none;
+    line-height: 30px;
+}
+
+.transaction .profile .saldos .membership ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction .profile .saldos .membership ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--secondary-font-color);
+}
+
+.transaction .profile .menu ul{
+    list-style: none;
+    padding: 15px 0 0px 0;
+    line-height: 50px;
+}
+
+.transaction .profile .menu ul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.transaction .profile .menu ul i{
+    color: #35b561;
+}
+
+
 /* Transaction */
 
 /* Footer */
