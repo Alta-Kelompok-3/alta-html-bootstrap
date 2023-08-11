@@ -3396,10 +3396,26 @@ body {
         color: var(--primary-color);
         font-weight: 600;
     }
-
 }
 
 /* Checkout */
+
+/* Transaction */
+.transaction {
+    margin-top: 100px;
+}
+
+.transaction .card {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction .profile .profile-image{
+    width: 100%;
+}
+/* Transaction */
 
 /* Footer */
 @media (max-width: 576px){
